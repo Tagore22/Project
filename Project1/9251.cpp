@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 #include <vector>
 #include <string>
 
@@ -35,4 +35,4 @@ int asdsadsadn()
         answer = max(answer, calcul(i, -1));
     cout << answer << '\n';
     return 0;
-}*/
+}
