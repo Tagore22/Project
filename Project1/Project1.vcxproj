@@ -188,6 +188,7 @@
     <ClCompile Include="RATIO.cpp" />
     <ClCompile Include="SmartPointer Address with Null.cpp" />
     <ClCompile Include="test.cpp" />
+    <ClCompile Include="test1.cpp" />
     <ClCompile Include="소스.cpp" />
     <ClCompile Include="최대 경로의 수들의 합 및 경로의 수.cpp" />
     <ClCompile Include="템플릿 꺽쇠괄호 사용유무.cpp" />
