@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 #include <vector>
 #include <algorithm>
 
@@ -45,4 +45,3 @@ int asdfsadfsadfsdafmain()
 	}
 	return 0;
 }
-*/
