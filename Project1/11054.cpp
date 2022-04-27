@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -24,7 +24,7 @@ int calcul(int now, int isUp)
     return ans;
 }
 
-int main()
+int dfdfdmain()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
@@ -37,4 +37,4 @@ int main()
         cin >> board[i];
     cout << calcul(-1, 0) - 1 << '\n';
     return 0;
-}
+}*/

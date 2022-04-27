@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <stack>
 #include <string>
 
@@ -34,7 +34,7 @@ bool calcul(string& str)
     return sta.empty() ? true : false;
 }
 
-int main()
+int sdafasdfsdmain()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
@@ -50,4 +50,4 @@ int main()
         cout << answer << '\n';
     }
     return 0;
-}
+}*/

@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <stack>
 
 using namespace std;
@@ -22,7 +22,7 @@ bool calcul(string& str)
     return sta.empty() ? true : false;
 }
 
-int main()
+int sdafasdfmain()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
@@ -38,4 +38,4 @@ int main()
         cout << answer << '\n';
     }
     return 0;
-}
+}*/

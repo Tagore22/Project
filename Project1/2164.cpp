@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <queue>
 
 using namespace std;
@@ -17,7 +17,7 @@ int calcul()
     return que.front();
 }
 
-int main()
+int dafsdfdsamain()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
@@ -29,4 +29,4 @@ int main()
         que.push(i);
     cout << calcul() << '\n';
     return 0;
-}
+}*/

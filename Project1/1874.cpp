@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <vector>
 #include <stack>
 
@@ -40,7 +40,7 @@ bool calcul()
     return true;
 }
 
-int main()
+int asdfasdfdsmain()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
@@ -59,4 +59,4 @@ int main()
     else
         cout << "NO" << '\n';
     return 0;
-}
+}*/

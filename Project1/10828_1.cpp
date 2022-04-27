@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <stack>
 
 using namespace std;
@@ -6,12 +6,12 @@ using namespace std;
 stack<int> sta;
 string str;
 
-void Spush(int x)
+void sdafdsSpush(int x)
 {
     sta.push(x);
 }
 
-void Spop()
+void asdfdsSpop()
 {
     int x = -1;
     if (!sta.empty())
@@ -22,18 +22,18 @@ void Spop()
     cout << x << '\n';
 }
 
-void Ssize()
+void sdafSsize()
 {
     cout << sta.size() << '\n';
 }
 
-void Sempty()
+void adfdsSempty()
 {
     int x = sta.empty() ? 1 : 0;
     cout << x << '\n';
 }
 
-void Stop()
+void asdfdStop()
 {
     int x = -1;
     if (!sta.empty())
@@ -70,4 +70,4 @@ int adsfasdfdsafmain()
         str.clear();
     }
     return 0;
-}
+}*/

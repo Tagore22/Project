@@ -1,57 +1,92 @@
 #include <iostream>
-#include <vector>
-#include <cmath>
+#include <deque>
+#include <algorithm>
 
 using namespace std;
 
-vector<int> potion1;
-vector<int> potion2;
-
-int gcd(int p, int q)
-{
-	if (q == 0)
-		return p;
-	return gcd(q, p % q);
-}
+deque<int> deq;
+string func;
+int n;
 
 void calcul()
 {
-	int gcdNum = potion1[0];
-	for (int i = 0; i < potion1.size(); ++i)
-		gcdNum = gcd(gcdNum, potion1[i]);
-	vector<int> list;
-	for (int i = 0; i < potion1.size(); ++i)
-		list.push_back(potion1[i] / gcdNum);
-	int maxNum = -1;
-	for (int i = 0; i < potion1.size(); ++i)
-		maxNum = max(maxNum, static_cast<int>(ceil(static_cast<double>(potion2[i]) / list[i])));
-	for (int i = 0; i < potion1.size(); ++i)
-		list[i] *= maxNum;
-	for (int i = 0; i < potion1.size(); ++i)
-		cout << list[i] - potion2[i] << " ";
-	cout << '\n';
+    bool checkR = false;
+    for (int i = 0; i < func.size(); ++i)
+    {
+        if (func[i] == 'R')
+        {
+            checkR = !checkR;
+        }
+        else
+        {
+            if (deq.empty())
+            {
+                cout << "error" << '\n';
+                return;
+            }
+            else
+            {
+                if (!checkR)
+                    deq.pop_front();
+                else
+                    deq.pop_back();
+            }
+        }
+    }
+    cout << '[';
+    while (deq.size() > 1)
+    {
+        if (!checkR)
+        {
+            int x = deq.front();
+            deq.pop_front();
+            cout << x << ',';
+        }
+        else
+        {
+            int x = deq.back();
+            deq.pop_back();
+            cout << x << ',';
+        }
+    }
+    if (deq.size() == 1)
+        cout << deq.front();
+    cout << ']' << '\n';
 }
-
 
 int main()
 {
-	ios::sync_with_stdio(false);
-	cin.tie(0);
-	cout.tie(0);
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
 
-	int c;
-	cin >> c;
-	for (int i = 0; i < c; ++i)
-	{
-		int n;
-		cin >> n;
-		potion1.assign(n, 0);
-		potion2.assign(n, 0);
-		for (int j = 0; j < n; ++j)
-			cin >> potion1[j];
-		for (int j = 0; j < n; ++j)
-			cin >> potion2[j];
-		calcul();
-	}
-	return 0;
+    int t;
+    cin >> t;
+    for (int i = 0; i < t; ++i)
+    {
+        while (!deq.empty())
+        {
+            deq.pop_front();
+        }
+        cin >> func;
+        cin >> n;
+        string str;
+        cin >> str;
+        int now = -1;
+        for (int j = 0; j < str.size(); ++j)
+        {
+            if (str[j] >= '0' && str[j] <= '9')
+            {
+                now = now == -1 ? str[j] - '0' : now * 10 + (str[j] - '0');
+            }
+            else
+            {
+                if (now != -1)
+                    deq.push_back(now);
+                now = -1;
+            }
+        }
+        calcul();
+    }
+    return 0;
 }

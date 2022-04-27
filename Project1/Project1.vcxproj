@@ -140,7 +140,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="10773.cpp" />
+    <ClCompile Include="10828_1.cpp" />
+    <ClCompile Include="10866.cpp" />
+    <ClCompile Include="10986.cpp" />
+    <ClCompile Include="11054.cpp" />
+    <ClCompile Include="11866.cpp" />
+    <ClCompile Include="17298.cpp" />
+    <ClCompile Include="18258.cpp" />
+    <ClCompile Include="1874.cpp" />
     <ClCompile Include="1912.cpp" />
+    <ClCompile Include="1966.cpp" />
+    <ClCompile Include="2164.cpp" />
+    <ClCompile Include="2565.cpp" />
+    <ClCompile Include="4949.cpp" />
+    <ClCompile Include="5430.cpp" />
+    <ClCompile Include="5의수난.cpp" />
+    <ClCompile Include="9012.cpp" />
     <ClCompile Include="9251.cpp" />
     <ClCompile Include="CANASATRIP.cpp" />
     <ClCompile Include="Default Move Container.cpp" />
@@ -171,6 +187,7 @@
     <ClCompile Include="POTION.cpp" />
     <ClCompile Include="RATIO.cpp" />
     <ClCompile Include="SmartPointer Address with Null.cpp" />
+    <ClCompile Include="test.cpp" />
     <ClCompile Include="소스.cpp" />
     <ClCompile Include="최대 경로의 수들의 합 및 경로의 수.cpp" />
     <ClCompile Include="템플릿 꺽쇠괄호 사용유무.cpp" />

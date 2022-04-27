@@ -29,8 +29,8 @@ void Ssize()
 
 void Sempty()
 {
-    int a = sta.empty() ? 1 : 0;
-    cout << a << '\n';
+    int x = sta.empty() ? 1 : 0;
+    cout << x << '\n';
 }
 
 void Stop()

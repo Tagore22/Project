@@ -1,11 +1,11 @@
-#include <iostream>
+/*#include <iostream>
 #include <vector>
 
 using namespace std;
 
 vector<long long> check;
 
-int main()
+int adsfsdfmain()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
@@ -27,4 +27,4 @@ int main()
         answer += check[i] * (check[i] - 1) / 2;
     cout << check[0] + answer << '\n';
     return 0;
-}
+}*/

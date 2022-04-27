@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <vector>
 #include <algorithm>
 
@@ -20,7 +20,7 @@ int calcul(int num)
     return ans;
 }
 
-int main()
+int dasfasdfmain()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
@@ -37,4 +37,4 @@ int main()
     sort(board.begin(), board.end());
     cout << n - calcul(-1) + 1 << '\n';
     return 0;
-}
+}*/
