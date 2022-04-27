@@ -13,13 +13,13 @@ void Spush(int x)
 
 void Spop()
 {
-    int x = -1;
+    int k = -1;
     if (!sta.empty())
     {
-        x = sta.top();
+        k = sta.top();
         sta.pop();
     }
-    cout << x << '\n';
+    cout << k << '\n';
 }
 
 void Ssize()
