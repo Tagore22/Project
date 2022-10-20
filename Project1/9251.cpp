@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 #include <vector>
 #include <string>
 
@@ -22,7 +22,7 @@ int calcul(int a, int b)
     return ans;
 }
 
-int asdsadsadn()
+int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
@@ -35,4 +35,4 @@ int asdsadsadn()
         answer = max(answer, calcul(i, -1));
     cout << answer << '\n';
     return 0;
-}*/
+}
