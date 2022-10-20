@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 #include <deque>
 
 using namespace std;
@@ -54,7 +54,7 @@ void Dback()
     cout << x << '\n';
 }
 
-int dfdfdfdmain()
+int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
@@ -92,4 +92,4 @@ int dfdfdfdmain()
             Dback();
     }
     return 0;
-}*/
+}
