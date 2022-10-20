@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 #include <queue>
 
 using namespace std;
@@ -41,7 +41,7 @@ void Qback()
     cout << x << '\n';
 }
 
-int adsfasdfsdamain()
+int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
@@ -71,4 +71,4 @@ int adsfasdfsdamain()
             Qback();
     }
     return 0;
-}*/
+}

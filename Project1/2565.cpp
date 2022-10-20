@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 #include <vector>
 #include <algorithm>
 
@@ -37,4 +37,4 @@ int dasfasdfmain()
     sort(board.begin(), board.end());
     cout << n - calcul(-1) + 1 << '\n';
     return 0;
-}*/
+}

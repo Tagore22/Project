@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 #include <queue>
 
 using namespace std;
@@ -29,4 +29,4 @@ int dafsdfdsamain()
         que.push(i);
     cout << calcul() << '\n';
     return 0;
-}*/
+}
