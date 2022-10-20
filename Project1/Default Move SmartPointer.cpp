@@ -27,7 +27,7 @@ int DMSmain()
 	MovingTest test1(5);
 	MovingTest test2 = std::move(test1); //이동 생성자
 
-	//std::cout << *(test1.GetPtr()) << std::endl;
+	//std::cout << *(test1.GetPtr()) << std::endl; //이동연산으로 인해 박살나있음.
 	std::cout << *(test2.GetPtr()) << std::endl;
 
 	if (!test1.GetPtr())

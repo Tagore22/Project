@@ -1,92 +1,42 @@
 #include <iostream>
-#include <deque>
-#include <algorithm>
+#include <vector>
 
 using namespace std;
 
-deque<int> deq;
-string func;
-int n;
+vector<vector<int>> board;
+int N;
 
-void calcul()
+void MakeAnswer()
 {
-    bool checkR = false;
-    for (int i = 0; i < func.size(); ++i)
+    for (int k = 0; k < N; ++k)
+        for (int i = 0; i < N; ++i)
+            for (int j = 0; j < N; ++j)
+                board[i][j] |= board[i][k] & board[k][j];
+
+    for (int i = 0; i < N; ++i)
     {
-        if (func[i] == 'R')
-        {
-            checkR = !checkR;
-        }
-        else
-        {
-            if (deq.empty())
-            {
-                cout << "error" << '\n';
-                return;
-            }
-            else
-            {
-                if (!checkR)
-                    deq.pop_front();
-                else
-                    deq.pop_back();
-            }
-        }
+        for (int j = 0; j < N; ++j)
+            cout << board[i][j] << ' ';
+        cout << '\n';
     }
-    cout << '[';
-    while (deq.size() > 1)
-    {
-        if (!checkR)
-        {
-            int x = deq.front();
-            deq.pop_front();
-            cout << x << ',';
-        }
-        else
-        {
-            int x = deq.back();
-            deq.pop_back();
-            cout << x << ',';
-        }
-    }
-    if (deq.size() == 1)
-        cout << deq.front();
-    cout << ']' << '\n';
 }
 
-int main()
+void Input()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
     cout.tie(0);
 
-    int t;
-    cin >> t;
-    for (int i = 0; i < t; ++i)
-    {
-        while (!deq.empty())
-        {
-            deq.pop_front();
-        }
-        cin >> func;
-        cin >> n;
-        string str;
-        cin >> str;
-        int now = -1;
-        for (int j = 0; j < str.size(); ++j)
-        {
-            if (str[j] >= '0' && str[j] <= '9')
-            {
-                now = now == -1 ? str[j] - '0' : now * 10 + (str[j] - '0');
-            }
-            else
-            {
-                if (now != -1)
-                    deq.push_back(now);
-                now = -1;
-            }
-        }
-        calcul();
-    }
+    cin >> N;
+    board.resize(N, vector<int>(N));
+    for (int i = 0; i < N; ++i)
+        for (int j = 0; j < N; ++j)
+            cin >> board[i][j];
+}
+
+int main()
+{
+    Input();
+    MakeAnswer();
     return 0;
 }

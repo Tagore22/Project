@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 
 using namespace std;
 
@@ -41,5 +41,5 @@ int sadsadsadadasdmain()
 		cout << calcul() << '\n';
 	}
 	return 0;
-}
+}*/
 

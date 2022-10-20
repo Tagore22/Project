@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <stack>
 
 using namespace std;
@@ -30,4 +30,4 @@ int adfasdfsdafmain()
     }
     cout << answer << '\n';
     return 0;
-}
+}*/
